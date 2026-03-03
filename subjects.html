@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Student E-Learning Hub | Subjects</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="main-header">
+    <div class="container nav-container">
+      <div class="logo">Student E-Learning Hub</div>
+      <nav>
+        <ul class="nav-links">
+          <button id="darkModeToggle" class="dark-toggle">🌙</button>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="subjects.html" class="active">Subjects</a></li>
+          <li><a href="resources.html">Resources</a></li>
+          <li><a href="quiz.html">Quiz</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main class="section">
+    <div class="container">
+      <h1 class="section-title">Subjects</h1>
+      <p class="section-subtitle">
+        Click on a subject card to explore its notes, videos, and practice questions.
+      </p>
+
+      <!-- To ADD a new subject:
+           1. Copy one ".subject-card" block.
+           2. Change the subject name and short description.
+           3. Update the "href" to point to the correct section in resources.html. -->
+      <div class="card-grid">
+        <a href="resources.html#math" class="card subject-card">
+          <h3>Mathematics</h3>
+          <p>Algebra, Geometry, Trigonometry, and more.</p>
+        </a>
+        <a href="resources.html#science" class="card subject-card">
+          <h3>Science</h3>
+          <p>Physics, Chemistry, Biology basics.</p>
+        </a>
+        <a href="resources.html#english" class="card subject-card">
+          <h3>English</h3>
+          <p>Grammar, writing tips, and reading practice.</p>
+        </a>
+        <a href="resources.html#computer" class="card subject-card">
+          <h3>Computer Science</h3>
+          <p>Basic computer concepts and programming.</p>
+        </a>
+      </div>
+    </div>
+  </main>
+
+  <footer class="main-footer">
+    <div class="container">
+      <p>&copy; <span id="year"></span> Student E-Learning Hub. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

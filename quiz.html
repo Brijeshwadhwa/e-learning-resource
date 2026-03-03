@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Student E-Learning Hub | Quiz</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="main-header">
+    <div class="container nav-container">
+      <div class="logo">Student E-Learning Hub</div>
+      <nav>
+        <ul class="nav-links">
+          <button id="darkModeToggle" class="dark-toggle">🌙</button>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="subjects.html">Subjects</a></li>
+          <li><a href="resources.html">Resources</a></li>
+          <li><a href="quiz.html" class="active">Quiz</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main class="section">
+    <div class="container">
+      <h1 class="section-title">Quick Quiz</h1>
+      <p class="section-subtitle">
+        Answer the multiple-choice questions below and click "Submit Quiz" to see your score.
+      </p>
+
+      <!-- To ADD new questions:
+           1. Add a new block like the ones below inside the form.
+           2. Change the question text and answer options.
+           3. Update the correct answer in script.js (see "Quiz Section"). -->
+      <form id="quiz-form" class="quiz-form">
+        <div class="quiz-question">
+          <p><strong>1. What is 5 + 7?</strong></p>
+          <label><input type="radio" name="q1" value="a" /> 10</label>
+          <label><input type="radio" name="q1" value="b" /> 11</label>
+          <label><input type="radio" name="q1" value="c" /> 12</label>
+        </div>
+
+        <div class="quiz-question">
+          <p><strong>2. Which gas do plants take in during photosynthesis?</strong></p>
+          <label><input type="radio" name="q2" value="a" /> Oxygen</label>
+          <label><input type="radio" name="q2" value="b" /> Carbon dioxide</label>
+          <label><input type="radio" name="q2" value="c" /> Nitrogen</label>
+        </div>
+
+        <div class="quiz-question">
+          <p><strong>3. Choose the correct spelling:</strong></p>
+          <label><input type="radio" name="q3" value="a" /> Recieve</label>
+          <label><input type="radio" name="q3" value="b" /> Receive</label>
+          <label><input type="radio" name="q3" value="c" /> Receeve</label>
+        </div>
+
+        <div class="quiz-question">
+          <p><strong>4. A computer's "brain" is called the:</strong></p>
+          <label><input type="radio" name="q4" value="a" /> CPU</label>
+          <label><input type="radio" name="q4" value="b" /> Monitor</label>
+          <label><input type="radio" name="q4" value="c" /> Keyboard</label>
+        </div>
+
+        <div class="quiz-question">
+          <p><strong>5. Which of these is a renewable source of energy?</strong></p>
+          <label><input type="radio" name="q5" value="a" /> Coal</label>
+          <label><input type="radio" name="q5" value="b" /> Oil</label>
+          <label><input type="radio" name="q5" value="c" /> Solar energy</label>
+        </div>
+
+        <button type="submit" class="btn primary-btn quiz-submit-btn">Submit Quiz</button>
+      </form>
+
+      <div id="quiz-result" class="quiz-result" aria-live="polite"></div>
+    </div>
+  </main>
+
+  <footer class="main-footer">
+    <div class="container">
+      <p>&copy; <span id="year"></span> Student E-Learning Hub. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

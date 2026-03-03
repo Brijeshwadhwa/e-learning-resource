@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Student E-Learning Hub | Contact</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="main-header">
+    <div class="container nav-container">
+      <div class="logo">Student E-Learning Hub</div>
+      <nav>
+        <ul class="nav-links">
+          <button id="darkModeToggle" class="dark-toggle">🌙</button>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="subjects.html">Subjects</a></li>
+          <li><a href="resources.html">Resources</a></li>
+          <li><a href="quiz.html">Quiz</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="contact.html" class="active">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main class="section">
+    <div class="container contact-layout">
+      <!-- Contact Info Section -->
+      <div class="contact-info card">
+        <h1>Contact Us</h1>
+        <p>
+          Have a doubt, suggestion, or feedback about this website? We would love to hear from you.
+          Fill in the form and we will respond as soon as possible.
+        </p>
+        <ul>
+          <li><strong>Name:</strong> Jasmeen</li>
+          <li><strong>Email:</strong> jasmeen8657@gmail.com</li>
+          <li><strong>Phone No. :</strong> +91 6239980242</li>
+
+
+          
+
+          <li><strong>Name:</strong> Brijesh Wadhwa </li>
+          <li><strong>Email:</strong> brijeshwadhwa26@gmail.com</li>
+          <li><strong>Phone No. :</strong> +91 6239980242</li>
+        </ul>
+      </div>
+
+      <!-- Contact Form Section -->
+      <div class="contact-form-wrapper card">
+        <h2>Send a Message</h2>
+        <form id="contact-form" novalidate>
+          <div class="form-group">
+            <label for="name">Name <span class="required">*</span></label>
+            <input type="text" id="name" name="name" placeholder="Enter your full name" required>
+            <small class="error-message" id="name-error"></small>
+          </div>
+
+          <div class="form-group">
+            <label for="email">Email <span class="required">*</span></label>
+            <input type="email" id="email" name="email" placeholder="Enter your email address" required>
+            <small class="error-message" id="email-error"></small>
+          </div>
+
+          <div class="form-group">
+            <label for="message">Message <span class="required">*</span></label>
+            <textarea id="message" name="message" rows="5" placeholder="Type your message here" required></textarea>
+            <small class="error-message" id="message-error"></small>
+          </div>
+
+          <button type="submit" class="btn primary-btn">Send Message</button>
+          <p id="contact-success" class="success-message" aria-live="polite"></p>
+        </form>
+      </div>
+    </div>
+  </main>
+
+  <footer class="main-footer">
+    <div class="container">
+      <p>&copy; <span id="year"></span> Student E-Learning Hub. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

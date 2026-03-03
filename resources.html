@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Student E-Learning Hub | Resources</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="main-header">
+    <div class="container nav-container">
+      <div class="logo">Student E-Learning Hub</div>
+      <nav>
+        <ul class="nav-links">
+          <button id="darkModeToggle" class="dark-toggle">🌙</button>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="subjects.html">Subjects</a></li>
+          <li><a href="resources.html" class="active">Resources</a></li>
+          <li><a href="quiz.html">Quiz</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main class="section">
+    <div class="container">
+      <h1 class="section-title">Learning Resources</h1>
+      <p class="section-subtitle">
+        Search and explore notes, videos, and practice questions for each subject.
+      </p>
+      
+
+      <div class="filter-buttons">
+        <button class="filter-btn" data-filter="all">All</button>
+        <button class="filter-btn" data-filter="math">Math</button>
+        <button class="filter-btn" data-filter="science">Science</button>
+        <button class="filter-btn" data-filter="english">English</button>
+        <button class="filter-btn" data-filter="computer">Computer</button>
+      </div>
+
+
+
+
+      
+      <!-- Search bar: filters resource cards by their title text -->
+      <div class="search-bar">
+        <input
+          type="text"
+          id="resource-search"
+          placeholder="Search resources by title..."
+          aria-label="Search resources by title"
+        />
+      </div>
+
+      <!-- NOTES SECTION -->
+      <!-- To ADD a new notes resource:
+           1. Copy one ".resource-card" block inside the correct subject section.
+           2. Change the title, description, and link.
+           3. Optionally update data-subject for filtering by subject later. -->
+      <section id="notes">
+        <h2 class="section-subtitle-alt">Notes (PDF)</h2>
+
+        <!-- Math Notes -->
+        <h3 id="math" class="subject-heading">Mathematics</h3>
+        <div class="card-grid">
+          <div class="card resource-card" data-title="Algebra Basics Notes" data-subject="math">
+            <h4>Algebra Basics Notes</h4>
+            <p>Introduction to variables, expressions, and simple equations.</p>
+            <a href="pdf/A Quick Algebra Review.pdf" class="btn small-btn">Open PDF (placeholder)</a>
+          </div>
+          <div class="card resource-card" data-title="Geometry Essentials Notes" data-subject="math">
+            <h4>Geometry Essentials Notes</h4>
+            <p>Important shapes, angles, and formulas for school exams.</p>
+            <a href="pdf/KGBV_Teacher_in_Mathematics_Book-II(Code-23078).pdf" class="btn small-btn">Open PDF (placeholder)</a>
+          </div>
+        </div>
+
+        <!-- Science Notes -->
+        <h3 id="science" class="subject-heading">Science</h3>
+        <div class="card-grid">
+          <div class="card resource-card" data-title="Physics Motion Notes" data-subject="science">
+            <h4>Physics: Motion Notes</h4>
+            <p>Understand speed, velocity, and acceleration with examples.</p>
+            <a href="pdf/Motion.pdf" class="btn small-btn">Open PDF (placeholder)</a>
+          </div>
+          <div class="card resource-card" data-title="Introduction to Cells Notes" data-subject="science">
+            <h4>Biology: Introduction to Cells</h4>
+            <p>Basic structure and functions of plant and animal cells.</p>
+            <a href="pdf/Cell_Basics.pdf" class="btn small-btn">Open PDF (placeholder)</a>
+          </div>
+        </div>
+
+        <!-- English Notes -->
+        <h3 id="english" class="subject-heading">English</h3>
+        <div class="card-grid">
+          <div class="card resource-card" data-title="Parts of Speech Notes" data-subject="english">
+            <h4>Parts of Speech</h4>
+            <p>Simple explanation of nouns, verbs, adjectives, and more.</p>
+            <a href="pdf/JELT640406.pdf" class="btn small-btn">Open PDF (placeholder)</a>
+          </div>
+          <div class="card resource-card" data-title="Essay Writing Tips Notes" data-subject="english">
+            <h4>Essay Writing Tips</h4>
+            <p>How to plan and write a clear and effective essay.</p>
+            <a href="pdf/Essay Writing Tips for Students.pdf" class="btn small-btn">Open PDF (placeholder)</a>
+          </div>
+        </div>
+
+        <!-- Computer Science Notes -->
+        <h3 id="computer" class="subject-heading">Computer Science</h3>
+        <div class="card-grid">
+          <div class="card resource-card" data-title="Introduction to Computers Notes" data-subject="computer">
+            <h4>Introduction to Computers</h4>
+            <p>Basic parts of a computer and how they work together.</p>
+            <a href="pdf/BCS101 -FOCP.pdf" class="btn small-btn">Open PDF (placeholder)</a>
+          </div>
+        </div>
+      </section>
+
+      <!-- VIDEOS SECTION -->
+      <!-- To ADD a new video:
+           1. Copy one ".resource-card" inside the correct subject group.
+           2. Change the title, description, and YouTube embed URL. -->
+      <section id="videos" class="section-top-margin">
+        <h2 class="section-subtitle-alt">Video Lessons</h2>
+
+        <!-- Math Videos -->
+        <h3 class="subject-heading">Mathematics</h3>
+        <div class="card-grid">
+          <div class="card resource-card" data-title="Algebra Basics Video" data-subject="math">
+            <h4>Algebra Basics</h4>
+            <p>Video explanation of basic algebra concepts.</p>
+            <div class="video-wrapper">
+              <!-- Replace src with any YouTube embed link you like -->
+              <iframe
+              src="https://www.youtube.com/embed/NybHckSEQBI"
+              title="Algebra Basics Video"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowfullscreen>
+            </iframe>
+            </div>
+          </div>
+        </div>
+
+        <!-- Science Videos -->
+        <h3 class="subject-heading">Science</h3>
+        <div class="card-grid">
+          <div class="card resource-card" data-title="Introduction to Cells Video" data-subject="science">
+            <h4>Introduction to Cells</h4>
+            <p>Visual explanation of cell structure and function.</p>
+            <div class="video-wrapper">
+              <iframe
+                src="https://www.youtube.com/embed/t5DvF5OVr1Y&t"
+                title="Introduction to Cells Video"
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen
+              ></iframe>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- PRACTICE QUESTIONS SECTION -->
+      <!-- To ADD questions:
+           1. Copy one ".resource-card" block.
+           2. Edit the list items to change questions. -->
+      <section id="practice" class="section-top-margin">
+        <h2 class="section-subtitle-alt">Practice Questions</h2>
+
+        <div class="card-grid">
+          <div class="card resource-card" data-title="Math Practice Set 1" data-subject="math">
+            <h4>Math Practice Set 1</h4>
+            <p>Try these questions after studying the notes.</p>
+            <ul class="question-list">
+              <li>1. Solve: 3x + 5 = 14</li>
+              <li>2. Find the perimeter of a rectangle with length 8 cm and width 5 cm.</li>
+              <li>3. Simplify: 2(3x - 4) + 5</li>
+            </ul>
+          </div>
+
+          <div class="card resource-card" data-title="Science Practice Set 1" data-subject="science">
+            <h4>Science Practice Set 1</h4>
+            <p>Check your understanding of basic science topics.</p>
+            <ul class="question-list">
+              <li>1. Define speed and write its formula.</li>
+              <li>2. Name any three renewable sources of energy.</li>
+              <li>3. What is the function of the cell membrane?</li>
+            </ul>
+          </div>
+
+          <div class="card resource-card" data-title="English Practice Set 1" data-subject="english">
+            <h4>English Practice Set 1</h4>
+            <p>Improve your grammar and writing skills.</p>
+            <ul class="question-list">
+              <li>1. Identify the verb in this sentence: "The dog ran quickly."</li>
+              <li>2. Rewrite this sentence in the past tense: "She writes a letter."</li>
+              <li>3. Write a short paragraph about your favorite hobby.</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+    </div>
+  </main>
+
+  <footer class="main-footer">
+    <div class="container">
+      <p>&copy; <span id="year"></span> Student E-Learning Hub. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
